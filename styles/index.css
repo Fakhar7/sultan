@@ -64,18 +64,21 @@ nav{
   font-weight: bold ;
 }
 
-.sign-up button{
+.sign-up button,
+.lets-start button{
   padding: 10px 30px;
   border: var(--off-white) 1px solid;
   font-weight: bold;
   background-color: transparent;
   color: var(--off-white);
   position: relative;
+  cursor: pointer;
   transition: all linear 0.2s;
   z-index: 10;
 }
 
-.sign-up button::after{
+.sign-up button::after,
+.lets-start button::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -87,11 +90,13 @@ nav{
   transition: all linear 0.2s;
 }
 
-.sign-up button:hover::after{
+.sign-up button:hover::after,
+.lets-start button:hover::after{
   height: 100%;
 }
 
-.sign-up button:hover{
+.sign-up button:hover,
+.lets-start button:hover{
   color: var(--dark-blue);
 }
 section,
@@ -115,13 +120,13 @@ section .container{
   width: 60%;
   height: 60%;
   border-radius: 10px;
-  background-color: var(--dark-blue-blur);
-  box-shadow: 0px 0px 20px var(--blue-shine);
+  /* background-color: var(--dark-blue-blur); */
+  /* box-shadow: 0px 0px 20px var(--blue-shine); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: baseline;
-  animation: change-color 3s infinite linear ;                        
+  justify-content: space-around;
+  /* animation: change-color 3s infinite linear ;                         */
 }
 
 @keyframes change-color {
@@ -153,6 +158,19 @@ section .container{
   text-align: center;
 }
 
-.lets-start button{
-  padding: 10px 20px;
+@media (max-width:920px) {
+  .welcome-content{
+    background-color: transparent;
+    animation: none;
+    box-shadow: none;
+  }
+ .title h1{
+  font-size: 30px;
+  font-weight: bold;
+ } 
+
+ .title p{
+  font-size: 16px;
+ }
 }
+/* no chnge */
