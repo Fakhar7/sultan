@@ -162,6 +162,7 @@ section .container{
   .welcome-content{
     background-color: transparent;
     animation: none;
+    width: 100%;
     box-shadow: none;
   }
  .title h1{
@@ -171,6 +172,11 @@ section .container{
 
  .title p{
   font-size: 16px;
+  width: 90%;
  }
+
+ .title{
+  width: 100%;
+}
 }
 /* no chnge */
